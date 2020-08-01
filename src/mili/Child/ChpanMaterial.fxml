@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="299.0" prefWidth="527.0" vgap="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="277.0" minHeight="10.0" prefHeight="202.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="87.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <GridPane maxWidth="1.7976931348623157E308" prefHeight="146.0" prefWidth="605.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <children>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="94.0" prefWidth="176.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="76.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="101.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Produk" textFill="#282828">
+                           <font>
+                              <Font name="Roboto Mono Medium" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label text="Sub Kategori" textFill="#282828" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Roboto Mono Medium" size="10.0" />
+                           </font>
+                        </Label>
+                        <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" visibleRowCount="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" visibleRowCount="8" GridPane.columnIndex="1" />
+                     </children>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </GridPane>
+               </children>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </StackPane>
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+               <children>
+                  <GridPane hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="211.0" prefWidth="226.0" vgap="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="240.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="240.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="30.0" />
+                        <RowConstraints maxHeight="20.0" minHeight="9.0" prefHeight="20.0" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="139.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <JFXListView fx:id="currentTask" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#handleListCurrentScope" prefHeight="256.0" prefWidth="136.0" style="-fx-background-color: #fff;" stylesheets="@../../../../TrackingProject/src/view/mylistview.css" verticalGap="120.0" GridPane.rowIndex="1" GridPane.rowSpan="2" />
+                        <JFXListView fx:id="listTask" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#handleListScope" prefHeight="114.0" prefWidth="138.0" style="-fx-background-color: #fff;" stylesheets="@../../../../TrackingProject/src/view/mylistview.css" verticalGap="120.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="100.0" style="-fx-background-color: #318ee3; -fx-background-radius: 5; -fx-border-radius: 5;">
+                           <children>
+                              <Label text="Material" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="100.0" style="-fx-background-color: #11c5c6; -fx-background-radius: 5; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label text="Daftar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1">
+                           <children>
+                              <TextField maxWidth="169.0" prefHeight="21.0" prefWidth="169.0" style="-fx-font-size: 9;" />
+                              <Button mnemonicParsing="false" prefHeight="15.0" prefWidth="35.0" style="-fx-background-color: #3162bd;">
+                                 <graphic>
+                                    <ImageView accessibleRole="BUTTON" fitHeight="17.0" fitWidth="12.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../mili.img/icons8-search-480.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </StackPane>
+            <GridPane vgap="10.0" GridPane.columnIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="200.0" spacing="10.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
+                     <children>
+                        <GridPane maxWidth="1.7976931348623157E308" prefHeight="22.0" prefWidth="182.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="120.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Nilai Ekonomis Produk" textFill="#c9c7c7">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="177.0" text="12300056" textAlignment="RIGHT" textFill="#282828">
+                           <font>
+                              <Font name="Roboto Mono Medium" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="200.0" spacing="10.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;" GridPane.rowIndex="1">
+                     <children>
+                        <GridPane maxWidth="1.7976931348623157E308" prefHeight="22.0" prefWidth="182.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="62.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Nilai Jual Produk" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <TextField alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="182.0" style="-fx-font-size: 15; -fx-font-family: roboto;" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="2">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="128.0" style="-fx-background-color: #4ead58; -fx-border-color: ##316#4ead582bd; -fx-font-size: 12; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-image-width: 0; -fx-text-fill: #f9f9f9;" text="Tambah">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../mili.img/icons8-update-tag-90.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="128.0" style="-fx-background-color: #c28944; -fx-border-color: ##3162b#c28944d; -fx-font-size: 12; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-image-width: 0; -fx-text-fill: #f9f9f9;" text="Edit">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../mili.img/icons8-edit-property-90.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+      <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="109.0" prefWidth="605.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;" GridPane.rowIndex="1">
+         <children>
+            <TableView maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="603.0" stylesheets="@../css/mylistview.css">
+               <columns>
+                  <TableColumn maxWidth="25.0" prefWidth="25.0" text="#" />
+                  <TableColumn maxWidth="1.7976931348623157E308" prefWidth="92.0" text="Material" />
+                  <TableColumn maxWidth="1.7976931348623157E308" prefWidth="110.0" text="Kti Pakai" />
+                  <TableColumn maxWidth="1.7976931348623157E308" prefWidth="179.0" text="Nilai Ekonomis Pakai" />
+               </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </StackPane>
+   </children>
+</GridPane>

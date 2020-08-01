@@ -1,0 +1,255 @@
+/*
+List View Style
+*/
+
+.mylistview {
+    -fx-expanded:true;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.mylistview .scroll-bar:horizontal .track,
+.mylistview .scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:0em;
+}
+ 
+.mylistview .scroll-bar:horizontal .increment-button ,
+.mylistview .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+ 
+.mylistview .scroll-bar:vertical .increment-button ,
+.mylistview .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 1em;
+    -fx-padding:0 0 0 0;
+}
+.mylistview  .scroll-bar .increment-arrow,
+.mylistview  .scroll-bar .decrement-arrow{
+    -fx-shape:" ";
+    -fx-padding:0;
+}
+ 
+.mylistview .scroll-bar:horizontal .thumb,
+.mylistview .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+}
+
+.mylistview {
+    -fx-background-insets: 0;
+  -fx-padding: 0;
+  
+}
+
+/*
+List Cell Style
+*/
+
+/*.list-cell:empty {
+    -fx-opacity: 0;
+}
+
+.cell-root{
+    -fx-background-color: red;
+}*/
+
+/*.list-cell:expanded{
+    -fx-vgap: 2em;
+    
+}*/
+
+
+.list-cell {
+    -fx-padding: 6px ;
+    -fx-background-color: transparent, -fx-background ;
+    -fx-background-insets: 0px, 2px ;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    
+}
+
+.list-cell:empty {
+    -fx-padding: 6px ;
+    -fx-background-color: transparent ;
+    -fx-background-insets: 0 ;
+}
+
+/*
+Scroll Style
+*/
+
+.scroll-pane :horizontal .track,
+.scroll-pane :vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:0em;
+}
+ 
+
+.scroll-pane :horizontal .increment-button ,
+.scroll-pane :horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+ 
+.scroll-pane :vertical .increment-button ,
+.scroll-pane :vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+.scroll-pane  .increment-arrow,
+.scroll-pane  .decrement-arrow{
+    -fx-shape:" ";
+    -fx-padding:0;
+}
+ 
+.scroll-pane :horizontal .thumb,
+.scroll-pane :vertical .thumb {
+    -fx-background-color:derive(black,110%);
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0.1em;
+}
+
+
+.table-view {
+    -fx-base:  #ffffff;
+    -fx-control-inner-background: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-table-cell-border-color: #f2f2f2;
+    -fx-table-header-border-color: #f2f2f2;
+    -fx-padding: 5;
+}
+
+.table-view:hover{
+    -fx-background-color :  #F1F1F1;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 25;
+    -fx-border-width: 0 0 0 0;
+    -fx-background-color: #318ee3;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 9pt;
+    -fx-font-family: "Roboto Mono Medium";
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+    
+}
+
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar :vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:0em;
+}
+
+.table-view .scroll-bar :horizontal .increment-button ,
+.table-view .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+ 
+.table-view .scroll-bar :vertical .increment-button ,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+.table-view .scroll-bar .increment-arrow,
+.table-view .scroll-bar  .decrement-arrow{
+    -fx-shape:" ";
+    -fx-padding:0;
+}
+ 
+.table-view .scroll-bar :horizontal .thumb,
+.table-view .scroll-bar :vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0.0em;
+}
+
+/* Default row background is black */
+
+
+/* Text in the rows will be white */
+.table-row-cell .text {
+       -fx-fill: #333645 ;
+       -fx-font-size:9pt;
+}
+
+
+/*This works for me, though there may be easier ways*/
+
+.table-row-cell:selected {
+   -fx-background-color: -fx-focus-color; 
+}
+.table-row-cell:selected .text {
+       -fx-fill: #ffffff ;
+
+}
+
+/*
+Pseudo class 'up' will change the row background
+ color to green when activated 
+ */
+.table-row-cell:up 
+{
+    -fx-background-color: #007054; 
+}
+
+/*
+Pseudo class 'down' will change the row background 
+color to red when activated
+*/
+.table-row-cell:down {
+    -fx-background-color: #A30029;
+}
+
+.tab{
+    -fx-padding: 0 20 0 20;
+    -fx-background-color:  #318ee3;
+
+    
+}
+
+.tab-header-background{
+    -fx-background-color: #FFFFFF;
+    
+    
+}
+
+.tab-label {
+-fx-text-fill: white ;
+-fx-font-size : 8pt;
+}
+
+/*689 801 002 113 533*/
