@@ -15,9 +15,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 
-<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="273.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="308.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <GridPane hgap="10.0" layoutX="32.0" layoutY="103.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="584.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <GridPane hgap="10.0" layoutX="32.0" layoutY="103.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="308.0" prefWidth="455.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="323.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="240.0" />
@@ -26,7 +26,7 @@
             <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="182.0" prefWidth="216.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="190.0" prefWidth="279.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
                <padding>
                   <Insets left="10.0" right="10.0" />
                </padding>
@@ -65,12 +65,15 @@
                               </GridPane>
                            </children>
                         </HBox>
-                        <TableView maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="603.0" stylesheets="@../css/mylistview.css" GridPane.rowIndex="1">
+                        <TableView maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="262.0" stylesheets="@../css/mylistview.css" GridPane.rowIndex="1">
                            <columns>
                               <TableColumn maxWidth="25.0" prefWidth="25.0" text="#" />
-                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="58.0" text="Id Stok" />
-                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="85.0" text="Stok" />
-                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="111.0" text="Kategori" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="58.0" text="Kode" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="86.0" text="Produk" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="76.0" text="Ketersediaan" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="85.0" text="Kategori" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="111.0" text="Sub Kategori" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="92.0" text="Deskripsi" />
                            </columns>
                         </TableView>
                      </children>
@@ -85,30 +88,37 @@
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
                </columnConstraints>
                <rowConstraints>
-                  <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="132.0" prefWidth="240.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
+                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="201.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
                      <children>
-                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="125.0" prefWidth="180.0">
+                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="94.0" prefWidth="176.0">
                            <columnConstraints>
                               <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="110.0" />
                            </columnConstraints>
                            <rowConstraints>
                               <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
                               <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
                               <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="1">
                                  <children>
-                                    <TextField maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="187.0" promptText="Stok" style="-fx-font-size: 11;" />
+                                    <TextField maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="186.0" promptText="Kategori" style="-fx-font-size: 11;" />
                                  </children>
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </HBox>
+                              <TableView maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="603.0" stylesheets="@../css/mylistview.css" GridPane.rowIndex="2">
+                                 <columns>
+                                    <TableColumn maxWidth="25.0" prefWidth="25.0" text="#" />
+                                    <TableColumn maxWidth="1.7976931348623157E308" prefWidth="61.0" text="Id Kat" />
+                                    <TableColumn maxWidth="1.7976931348623157E308" prefWidth="84.0" text="Kategori" />
+                                 </columns>
+                              </TableView>
                               <GridPane hgap="10.0" vgap="10.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -138,7 +148,6 @@
                                     </Button>
                                  </children>
                               </GridPane>
-                              <ComboBox maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="213.0" promptText="kategori" GridPane.rowIndex="2" />
                            </children>
                            <StackPane.margin>
                               <Insets />
@@ -158,24 +167,31 @@
                            <rowConstraints>
                               <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
                               <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
                               <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
                               <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="1">
                                  <children>
-                                    <TextField maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="187.0" promptText="Kategori" style="-fx-font-size: 11;" />
+                                    <TextField prefHeight="30.0" prefWidth="58.0" promptText="Kategori" style="-fx-font-size: 11;" text="Kode" />
+                                    <TextField maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="133.0" promptText="Sub Kategori" style="-fx-font-size: 11;" />
                                  </children>
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </HBox>
-                              <TableView maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="603.0" stylesheets="@../css/mylistview.css" GridPane.rowIndex="2">
+                              <TableView maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="603.0" stylesheets="@../css/mylistview.css" GridPane.rowIndex="3">
                                  <columns>
                                     <TableColumn maxWidth="25.0" prefWidth="25.0" text="#" />
-                                    <TableColumn maxWidth="1.7976931348623157E308" prefWidth="61.0" text="Id Kat" />
-                                    <TableColumn maxWidth="1.7976931348623157E308" prefWidth="85.0" text="Kategori" />
+                                    <TableColumn maxWidth="1.7976931348623157E308" prefWidth="58.0" text="Kode" />
+                                    <TableColumn maxWidth="1.7976931348623157E308" prefWidth="110.0" text="Sub Kat" />
                                  </columns>
                               </TableView>
+                              <ComboBox maxWidth="190.0" prefHeight="25.0" prefWidth="190.0" promptText="Kategori" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </ComboBox>
                               <GridPane hgap="10.0" vgap="10.0">
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

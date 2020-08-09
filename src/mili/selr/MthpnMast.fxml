@@ -252,7 +252,7 @@
                                        <children>
                                           <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.rowIndex="1">
                                              <children>
-                                                <TextField maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="187.0" promptText="Kategori" style="-fx-font-size: 11;" />
+                                                <TextField maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="187.0" promptText="Kategori Stok" style="-fx-font-size: 11;" />
                                              </children>
                                              <GridPane.margin>
                                                 <Insets />

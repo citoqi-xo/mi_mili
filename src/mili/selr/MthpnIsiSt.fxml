@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <GridPane maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="368.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="179.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="326.0">
+               <children>
+                  <Label text="Pengisian Stok">
+                     <font>
+                        <Font name="Roboto Mono Medium" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="20.0" prefWidth="203.0" spacing="7.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/icons8-speed-90.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="&gt;" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Roboto Mono Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label text="Transaksi" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Roboto Mono Medium" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Roboto Mono Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label text="Pengisian Stok" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Roboto Mono Medium" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </top>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+   <center>
+      <GridPane hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0" BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <GridPane maxWidth="1.7976931348623157E308" prefHeight="117.0" prefWidth="547.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                     <children>
+                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="94.0" prefWidth="176.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="54.5" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="103.5" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Tanggal" textFill="#282828">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Pelanggan" textFill="#282828" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="9.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Kasir" textFill="#282828" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="9.0" />
+                                 </font>
+                              </Label>
+                              <TextField style="-fx-font-size: 9;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <ComboBox maxWidth="1.7976931348623157E308" prefWidth="150.0" visibleRowCount="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField style="-fx-font-size: 9;" GridPane.columnIndex="1" />
+                           </children>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </GridPane>
+                     </children>
+                  </StackPane>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" spacing="25.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;" GridPane.columnIndex="1">
+                     <children>
+                        <GridPane maxWidth="1.7976931348623157E308" prefHeight="22.0" prefWidth="182.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="62.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="120.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="No Trk" textFill="#c9c9c9">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label text="001TE12245600354" textFill="#282828" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label alignment="CENTER_RIGHT" prefHeight="22.0" prefWidth="177.0" text="12300056" textAlignment="RIGHT" textFill="#282828">
+                           <font>
+                              <Font name="Roboto Mono Medium" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+                  <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <children>
+                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="94.0" prefWidth="176.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="54.5" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="103.5" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Tanggal" textFill="#282828">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Kti" textFill="#282828" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Kode Stok" textFill="#282828" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Roboto Mono Medium" size="10.0" />
+                                 </font>
+                              </Label>
+                              <TextField promptText="kode" style="-fx-font-size: 11;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField alignment="CENTER" promptText="tanggal" style="-fx-font-size: 11;" GridPane.columnIndex="1" />
+                              <TextField promptText="kuantitas barang" style="-fx-font-size: 11;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                           <StackPane.margin>
+                              <Insets />
+                           </StackPane.margin>
+                        </GridPane>
+                     </children>
+                     <GridPane.margin>
+                        <Insets right="5.0" />
+                     </GridPane.margin>
+                  </StackPane>
+                  <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="2">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="19.0" prefWidth="128.0" style="-fx-background-color: #4ead58; -fx-border-color: ##316#4ead582bd; -fx-font-size: 12; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-image-width: 0; -fx-text-fill: #f9f9f9;" text="Proses">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../mili.img/icons8-e-commerce-90.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="16.0" prefWidth="128.0" style="-fx-background-color: #c28944; -fx-border-color: ##3162b#c28944d; -fx-font-size: 12; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-image-width: 0; -fx-text-fill: #f9f9f9;" text="Hapus">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../mili.img/icons8-trash-90.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="136.0" prefWidth="584.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <children>
+                  <TableView maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="603.0" stylesheets="@../css/mylistview.css">
+                     <columns>
+                        <TableColumn maxWidth="25.0" prefWidth="25.0" text="#" />
+                        <TableColumn maxWidth="1.7976931348623157E308" prefWidth="92.0" text="Kode" />
+                        <TableColumn maxWidth="1.7976931348623157E308" prefWidth="110.0" text="Harga" />
+                        <TableColumn maxWidth="1.7976931348623157E308" prefWidth="124.0" text="Kti" />
+                        <TableColumn maxWidth="1.7976931348623157E308" prefWidth="109.0" text="Total" />
+                        <TableColumn maxWidth="1.7976931348623157E308" prefWidth="94.0" text="Proses +" />
+                     </columns>
+                  </TableView>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </StackPane>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>
