@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="578.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane hgap="10.0" layoutX="32.0" layoutY="103.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="326.0" prefWidth="584.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="323.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="187.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="214.0" prefWidth="526.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff;">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <children>
+                  <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="166.0" prefWidth="552.0" vgap="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="103.5" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <GridPane hgap="15.0" prefWidth="205.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <DatePicker maxWidth="1.7976931348623157E308" minHeight="25.0" prefHeight="0.0" promptText="From">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin></DatePicker>
+                                    <DatePicker maxWidth="1.7976931348623157E308" minHeight="25.0" prefHeight="0.0" prefWidth="91.0" promptText="To" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin></DatePicker>
+                                 </children>
+                                 <padding>
+                                    <Insets left="8.0" />
+                                 </padding>
+                              </GridPane>
+                              <GridPane hgap="5.0" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="208.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="156.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="66.0" minWidth="10.0" prefWidth="37.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="15.0" prefWidth="35.0" style="-fx-background-color: #3162bd;" GridPane.columnIndex="1">
+                                       <graphic>
+                                          <ImageView accessibleRole="BUTTON" fitHeight="17.0" fitWidth="12.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../mili.img/icons8-search-480.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <TextField prefHeight="25.0" prefWidth="169.0" style="-fx-font-size: 9;" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                        <TableView maxWidth="1.7976931348623157E308" prefHeight="175.0" prefWidth="558.0" stylesheets="@../css/mylistview.css" GridPane.rowIndex="1">
+                           <columns>
+                              <TableColumn maxWidth="25.0" prefWidth="25.0" text="#" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="132.0" text="Stok" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="184.0" text="Jumlah Stok Keluar" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="126.0" text="Sisa Stok" />
+                              <TableColumn maxWidth="1.7976931348623157E308" prefWidth="126.0" text="No Transaksi" />
+                           </columns>
+                        </TableView>
+                     </children>
+                     <StackPane.margin>
+                        <Insets top="8.0" />
+                     </StackPane.margin>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

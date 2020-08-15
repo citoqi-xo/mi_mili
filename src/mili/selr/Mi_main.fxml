@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mili.selr.Mi_mainController">
+<BorderPane fx:id="rootLoad" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mili.selr.Mi_mainController">
    <top>
       <GridPane prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -39,14 +39,14 @@
                   </Label>
                </children>
             </AnchorPane>
-            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #755a94;" GridPane.columnIndex="1">
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="5.0" style="-fx-background-color: #755a94;" GridPane.columnIndex="1">
                <children>
                   <ImageView fitHeight="22.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../mili.img/icons8-male-user-90.png" />
                      </image>
                   </ImageView>
-                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#btn_Close" prefHeight="32.0" prefWidth="84.0" style="-fx-background-color: #755a94;" text="Log Out" textFill="#e8e8e8">
+                  <Button id="logout" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#btn_Close" prefHeight="32.0" prefWidth="107.0" stylesheets="@../css/mybutton.css" text="Log Out" textFill="#e8e8e8">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -76,7 +76,6 @@
               <rowConstraints>
                 <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
                 <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
@@ -86,10 +85,10 @@
                   <Insets />
                </StackPane.margin>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                  <Insets bottom="2.0" left="2.0" top="2.0" />
                </padding>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #2A2E37;">
+                  <Button id="black_line" mnemonicParsing="false" onAction="#btn_MthpnTrk" prefHeight="40.0" prefWidth="59.0" style="-fx-background-color: #2A2E37;" stylesheets="@../css/mybutton.css">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -98,16 +97,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #2A2E37;" GridPane.rowIndex="1">
-                     <graphic>
-                        <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../mili.img/icons8-shipped-50.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #2A2E37;" GridPane.rowIndex="2">
+                  <Button id="black_line" mnemonicParsing="false" onAction="#btn_MthpnIsiSt" prefHeight="40.0" prefWidth="76.0" style="-fx-background-color: #2A2E37;" stylesheets="@../css/mybutton.css" GridPane.rowIndex="1">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -116,7 +106,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #2A2E37;" GridPane.rowIndex="3">
+                  <Button id="black_line" mnemonicParsing="false" onAction="#btn_MthpnMast" prefHeight="40.0" prefWidth="58.0" style="-fx-background-color: #2A2E37;" stylesheets="@../css/mybutton.css" GridPane.rowIndex="2">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -125,7 +115,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #2A2E37;" GridPane.rowIndex="4">
+                  <Button id="black_line" mnemonicParsing="false" onAction="#btm_MthlaporanStok" prefHeight="40.0" prefWidth="58.0" style="-fx-background-color: #2A2E37;" stylesheets="@../css/mybutton.css" GridPane.rowIndex="3">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -134,7 +124,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #2A2E37;" GridPane.rowIndex="5">
+                  <Button id="black_line" mnemonicParsing="false" onAction="#btn_MthlaporanPenj" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #2A2E37;" stylesheets="@../css/mybutton.css" GridPane.rowIndex="4">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                            <image>

@@ -42,7 +42,7 @@
                <children>
                   <ImageView fitHeight="18.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/icons8-speed-90.png" />
+                        <Image url="@../../mili.img/icons8-speed-90.png" />
                      </image>
                   </ImageView>
                   <Label text="&gt;" textFill="#c9c9c9">
@@ -173,7 +173,7 @@
                                  <graphic>
                                     <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../Downloads/icons8-add-shopping-cart-90.png" />
+                                          <Image url="@../../mili.img/icons8-add-shopping-cart-90.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>

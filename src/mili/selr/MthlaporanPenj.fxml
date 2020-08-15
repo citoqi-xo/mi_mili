@@ -36,7 +36,7 @@
                <children>
                   <ImageView fitHeight="18.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../Downloads/icons8-speed-90.png" />
+                        <Image url="@../../mili.img/icons8-speed-90.png" />
                      </image>
                   </ImageView>
                   <Label text="&gt;" textFill="#c9c9c9">
@@ -482,7 +482,7 @@
                                     <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="PRODUK PALING LAKU" textFill="#282828">
+                                    <Label text="PRODUK KURANG LAKU" textFill="#282828">
                                        <font>
                                           <Font name="Roboto Mono Medium" size="12.0" />
                                        </font>
